@@ -84,7 +84,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
@@ -172,13 +171,13 @@ nav {
   justify-content: center;
 }
 .nav-center h4 {
+  text-align: center;
   margin-bottom: 0;
-  background: linear-gradient(to right, #ff00ff, #ffd700,
- blue, #ffd700, red, purple, #ffd700, green);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #222;
   font-size: 2rem;
 }
+
+  
 .nav-links {
   display: flex;
 }
@@ -213,6 +212,15 @@ main {
   padding: 1rem;
   border-radius: var(--radius);
   margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 500px) {
+  .container h2{
+    padding: 2;
+    font-size: 1.5em;
+  }
+  .nav-center h4{
+    font-size: 1.5rem;
+  }
 }
 p{
   display: none;
